@@ -8,8 +8,7 @@ from loguru import logger
 
 
 os.environ['TRANSFORMERS_OFFLINE'] = '1'
-# EMBEDDING_MODEL = 'BAAI/bge-m3' # Embedding Model name or PATH
-EMBEDDING_MODEL = 'D:/workspace/model/bge-m3' # Embedding Model name or PATH
+EMBEDDING_MODEL = 'BAAI/bge-m3' # Embedding Model name or PATH
 
 logger.info(f'Loading embedding model: {EMBEDDING_MODEL}, {str(datetime.datetime.now())}')
 EMBEDDINGS = HuggingFaceEmbeddings(
